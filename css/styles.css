@@ -97,7 +97,7 @@ a:hover {
   background-color: rgba(229, 152, 155, 0.7);
   margin: 20px 0;
   border-radius: 10px;
-  overflow: hidden;
+  overflow-x: hidden;
   text-align: center;
   padding: 10px;
 }
@@ -168,8 +168,7 @@ button{
   border-radius : 5px;
   color: #fff;
   text-shadow : 0px 1px 0px #888;
-  transition : background-color ease-in-out 0.5s; 
-  
+  transition : background-color ease-in-out 0.4s; 
 }
 .element{
   gap: 10px;
@@ -215,19 +214,99 @@ button:hover{
   color : #FFB4A2;
 }
 
-.index{
-  overflow: hidden!important;
+/* Footer Section */
+footer {
+  background-color: rgba(109, 104, 117, 0.7);
+  width:100%;
+  flex-direction: column;
+  display: flex;
+  padding-bottom: 20px;
 }
 
-/* Footer Section 
-footer {
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
   text-align: center;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #ddd;
-  margin-top: 20px;
-  font-size: 14px;
-  width: 100%;
-  border-radius: 10px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
-*/
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.form-container {
+  background-color: rgba(109, 104, 117, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-form h2 {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-form label {
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #bbb;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.btn-contact {
+  background-color: #656578;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+.btn-contacts {
+  background-color: #565661;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+.btn-contact:hover {
+  background-color: #5c5873;
+}
+.btn-contacts:hover {
+  background-color: #413e52;
+}

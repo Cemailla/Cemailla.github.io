@@ -1,25 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /* Global Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; 
   margin: 0;
   padding: 0;
-  background: url('../assets/img/bg.jpg') no-repeat center center fixed;
+  background: url('../assets/img/bg3.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   min-height: 100vh;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .icon {
-  max-width: 50px;
-  max-height: 50px;
+
+  max-width: 40px;
+  max-height: 40px;
   border: none!important;
+  box-shadow:none!important;
+  flex-direction: column!important;
 }
 
 .svg-icon {
@@ -27,10 +32,11 @@ body {
   max-height: 100px;
   border: none!important;
   margin:none;
+  box-shadow:none!important;
 }
 /* Header Section */
 header {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(109, 104, 117, 0.7);
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -77,16 +83,18 @@ a {
 
 a:hover {
     color: white;
+    box-shadow:none;
 }
 
 /* Projects Section */
 .projects-list {
   padding: 20px;
   width: 100%;
+  align-items: center;
 }
 
 .project-item {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(229, 152, 155, 0.7);
   margin: 20px 0;
   border-radius: 10px;
   overflow: hidden;
@@ -102,7 +110,14 @@ a:hover {
   margin-bottom: 10px;
 }
 .project-item img:hover {
-    border: #88868a 5px solid;
+  box-shadow:
+  0 0 8px #ffcad4,
+  inset 0 0 8px #ffcad4,
+  0 0 16px #ff70a5,
+  inset 0 0 16px #ff70a5,
+  0 0 32px #ff70a5,
+  inset 0 0 32px #ff70a5;
+    
 }
 
 .project-item h3 {
@@ -119,22 +134,19 @@ a:hover {
   color: #fff;
   font-weight: bold;
   text-decoration: underline;
- 
   border-radius: 5px;
 }
-
-.project-item img:hover {
-    
+#skills{
+  margin-bottom: 20px;
 }
-
 /* Skills Section */
 .skills-list {
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(210, 161, 157, 0.7);
   border-radius: 10px;
-  margin: 20px;
   width: 100%;
-  text-align: center;
+  align-items: center;
+  width: 100%;
   align-items: center;
 }
 
@@ -147,6 +159,64 @@ a:hover {
 
 .skills-list div {
   margin: 10px 0;
+}
+button{
+  width : 190px;
+  height : 50px;
+  margin-bottom : 15px;
+  border : none;
+  border-radius : 5px;
+  color: #fff;
+  text-shadow : 0px 1px 0px #888;
+  transition : background-color ease-in-out 0.5s; 
+  
+}
+.element{
+  gap: 10px;
+  margin-bottom: 50px;
+  font-family: 'Rubik', sans-serif;
+}
+.btn-projets{
+  width : 190px;
+  height : 50px;
+  border : none;
+  border-radius : 5px;
+  color: #ffffff;
+  transition : background-color ease-in-out 0.5s; 
+  background-color : #f68fa0;
+  text-decoration: none;
+  padding: 10px 30px 10px;
+}
+.btn-skills{
+  width : 190px;
+  text-decoration: none;
+  height : 50px;
+  margin-bottom : 15px;
+  border : none;
+  border-radius : 5px;
+  color: #fff;
+  transition : background-color ease-in-out 0.5s; 
+  background-color : #FFB4A2;
+  padding: 10px 10px 10px;
+}
+button:hover{
+  background-color : transparent ;
+  cursor: pointer;
+}
+
+.btn-projets:hover{
+  background-color : transparent ;
+  border : 1px solid  #f68fa0;
+  color : #f68fa0;
+}
+.btn-skills:hover{
+  background-color : transparent ;
+  border : 1px solid  #FFB4A2;
+  color : #FFB4A2;
+}
+
+.index{
+  overflow: hidden!important;
 }
 
 /* Footer Section 

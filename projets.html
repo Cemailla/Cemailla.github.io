@@ -1,108 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="assets/img/cv.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com;">
+  <title>Tognini Célia - Portfolio</title> 
+  <link rel="stylesheet" href="css/styles.css">  <link rel="icon" href="assets/img/cv.png">   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
 <body>
-    <header>
-        <div class="header-content">
-            <a href="https://github.com/Cemailla" target="_blank">
-                <img src="assets/img/cv.png" alt="Photo de Tognini Célia" class="profile-photo" style="width: 20% ; height:20%;">
-            </a>
-            <div class="header-text">
-                <h1><a href="https://github.com/Cemailla" target="_blank">TOGNINI Célia</a></h1>
-                <ul>
-                    <li>20 ans</li>
-                    <li>Etudiante en Informatique</li>
-                    <li><strong>Github:</strong> <a href="https://github.com/Cemailla" target="_blank">Lien vers mon Github</a></li>
-                    <li><a href="assets/CV_stage_Tognini_Célia.pdf" target="_blank">Consulter mon CV</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+  <header class="header">  <div class="header-content">
+      <a href="https://github.com/Cemailla" target="_blank">
+        <img src="assets/img/cv.png" alt="Photo de Tognini Célia" class="profile-photo">
+      </a>
+      <div class="header-text">
+        <h1><a href="https://github.com/Cemailla" target="_blank">Tognini Célia</a></h1>
+        <ul>
+          <li>20 ans</li>
+          <li>Étudiante en Informatique</li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Cemailla" target="_blank">Lien vers mon Github</a></li>
+          <li><a href="assets/CV_stage_Tognini_Célia.pdf" target="_blank">Consulter mon CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
- 
-        <section id="projects">
-            <h2>Mes Projets</h2>
-            <div class="projects-list">
-                <div class="project-item">
-                    <a href="https://github.com/Cemailla/algorithme_Djikstra" target="_blank">
-                        <img src="assets/img/algorithme_Djikstra.png" alt="algorithme_Djikstra">
-                        <h3>Algorithme_Djikstra</h3>
-                    </a>
-                    <p>L'algorithme de Dijkstra est un outil informatique qui permet de trouver le chemin <br>
-                        le plus court entre deux points dans un réseau, comme un réseau routier.</p>
-                    <a href="https://www.python.org"><img src="https://skillicons.dev/icons?i=python" alt="Python Logo" class="icon"></a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/Cemailla/Takuzu" target="_blank">
-                        <img src="assets/img/takuzu.jpg" alt="Takuzu">
-                        <h3>Takuzu</h3>
-                    </a>
-                    <p>Ce code écrit en Ada permet la résolution automatique de grilles de Takuzu.</p>
-                    <a href="https://www.adacore.com/documentation"><img src="assets/img/ada_logo.svg" class="svg-icon"></a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/Cemailla/Cabinet-Medical" target="_blank">
-                        <img src="assets/img/cabinet.png" alt="Cabinet Médical">
-                        <h3>Cabinet Médical</h3>
-                    </a>
-                    <p>Mini-projet d'un site de gestion d'un cabinet médical.</p>
-                    <a href="https://www.php.net"><img src="https://skillicons.dev/icons?i=php" class="icon"></a>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img src="https://skillicons.dev/icons?i=html" class="icon"></a>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference"><img src="https://skillicons.dev/icons?i=css" class="icon"></a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/Cemailla/Game-UI" target="_blank">
-                        <img src="assets/img/game_ui.png" alt="Game-UI">
-                        <h3>Game-UI</h3>
-                    </a>
-                    <p>Interface graphique de jeu vidéo.</p>
-                    <a href="https://www.solidjs.com"><img src="https://skillicons.dev/icons?i=solidjs" class="icon"></a>
-                    <a href="https://sass-lang.com"><img src="https://skillicons.dev/icons?i=sass" class="icon"></a>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference"><img src="https://skillicons.dev/icons?i=css" class="icon"></a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/Cemailla/Synchronisation-des-threads" target="_blank">
-                        <img src="assets/img/threads.png" alt="Synchronisation-des-threads">
-                        <h3>Synchronisation des threads</h3>
-                    </a>
-                    <p>Ces programmes en C permettent de coordonner différentes tâches qui s'exécutent en même temps.<br>
-                        En utilisant différentes techniques selon les besoins.</p>
-                    <a href="https://devdocs.io/c/"><img src="https://skillicons.dev/icons?i=c" class="icon"></a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/Cemailla/1er_code_html" target="_blank">
-                        <img src="assets/img/1er_code.png" alt="1er_code_html">  
-                        <h3>Reproduction du site web de l'iut</h3>
-                    </a>
-                    <p>1er mini-projet en HTML, amélioration de l'interface du site de l'iut.</p>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML"><img src="https://skillicons.dev/icons?i=html" class="icon"></a>
-                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Reference"><img src="https://skillicons.dev/icons?i=css" class="icon"></a>
-                </div>
-                <div class="project-item">
-                    <a href="https://github.com/Cemailla/Vente-de-Tomates" target="_blank">
-                        <img src="assets/img/tomates.png" alt="tomates">  
-                        <h3>Vente de tomates</h3>
-                    </a>
-                    <p>Site qui simule un site de vente de tomates.</p>
-                    <a href="https://www.java.com/fr/"><img src="https://skillicons.dev/icons?i=java" class="icon"></a>
-                </div>
-            </div>
-        </section>
-        <div class="element">
-            <a class="btn-skills" href="skills.html">VOIR MES COMPETENCES</a>
-        </div>
-    </main>
-    <footer>
-        <p><i class="fa-solid fa-envelope"></i> celia.togini@gmail.com</p>
-        <a href="https://www.linkedin.com/in/célia-tognini-8ab182264/"><img src="assets/img/linkedin.png" class="svg-icon" width="50px"></a>
-        <a href="contact.html">Contact</a>
-    </footer>
+  <section id="projects" class="projects">  <h2>Mes Projets</h2>
+    <div class="projects-list">
+      <div class="project-item">
+        <a href="https://github.com/Cemailla/algorithme_Djikstra" target="_blank">
+          <img src="assets/img/algorithme_Djikstra.png" alt="Algorithme Dijkstra">
+        </a>
+        <h3>Algorithme Dijkstra</h3>
+        <p>L'algorithme de Dijkstra est un outil informatique qui permet de trouver le chemin le plus court entre deux points dans un réseau, comme un réseau routier.</p>
+        <a href="https://www.python.org"><img src="https://skillicons.dev/icons?i=python" alt="Python Logo" class="icon"></a>
+      </div>
+      <div class="project-item">
+        <a href="https://github.com/Cemailla/Takuzu" target="_blank">
+          <img src="assets/img/takuzu.jpg" alt="Takuzu">
+        </a>
+        <h3>Takuzu</h3>
+        <p>Ce code écrit en Ada permet la résolution automatique de grilles de Takuzu.</p>
+        <a href="https://www.adacore.com/documentation"><img src="https://skillicons.dev/icons?i=ada" alt="Ada Logo" class="icon"></a>
+      </div>
+      </div>
+  </section>
+
+  <a class="btn-skills" href="skills.html">Voir mes compétences</a>  <footer class="footer">  <p><i class="fas fa-envelope"></i> celia.togini@gmail.com</p>
+    <a href="https://www.linkedin.com/in/célia-tognini-8ab182264/"><img src="assets/img/linkedin.png" class="svg-icon" width="50px"></a>
+    <a href="contact.html">Contact</a>
+  </footer>
 </body>
 </html>

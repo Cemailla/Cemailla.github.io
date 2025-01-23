@@ -171,12 +171,13 @@ button{
   gap: 10px;
   margin-bottom: 50px;
   font-family: 'Rubik', sans-serif;
+  align-items: center;
 }
 @media (max-width: 600px) {
   .element {
     display: flex;
     flex-direction: column; /* Change la direction en colonne pour les petits écrans */
-    
+    align-items: center;
   }
 }
 .btn-projets{
@@ -224,7 +225,7 @@ footer {
   width:100%;
   flex-direction: column;
   display: flex;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .fa {

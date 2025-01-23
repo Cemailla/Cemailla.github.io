@@ -178,6 +178,7 @@ button{
     display: flex;
     flex-direction: column; /* Change la direction en colonne pour les petits écrans */
     align-items: center;
+    overflow-x: hidden;
   }
 }
 .btn-projets{

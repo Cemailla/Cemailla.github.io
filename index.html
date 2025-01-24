@@ -12,7 +12,7 @@
     <header>
         <div class="header-content">
             <a href="https://github.com/Cemailla" target="_blank">
-                <img src="assets/img/cv.png" alt="Photo de Tognini Célia" class="profile-photo" style="width: 18% ; height:18%;">
+                <img src="assets/img/cv.png" alt="Photo de Tognini Célia" class="profile-photo">
             </a>
             <div class="header-text">
                 <h1><a href="https://github.com/Cemailla" target="_blank">TOGNINI Célia</a></h1>
@@ -28,7 +28,11 @@
         </div>
     </header>
 
-    <main>
+    <a href="#main-content" id="scroll-down" class="scroll-down">
+        <i class="fa-solid fa-chevron-down"></i>
+    </a>
+
+    <main id="main-content">
         <div class="element">
             <a class="btn-projets" href="projets.html">VOIR MES PROJETS</a>  
             <a class="btn-skills" href="skills.html">VOIR MES COMPETENCES</a>
@@ -39,10 +43,22 @@
         <a href="https://www.linkedin.com/in/célia-tognini-8ab182264/"><img src="assets/img/linkedin.png" class="svg-icon" width="50px"></a>
         <a href="contact.html">Contact</a>
     </footer>
+    <script>
+        const scrollDown = document.getElementById('scroll-down');
+
+        scrollDown.addEventListener('click', function() {
+            this.style.display = 'none';
+        });
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY === 0) {
+                scrollDown.style.display = 'block';
+            } else if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                scrollDown.style.display = 'none';
+            } else {
+                scrollDown.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
-
-<!--met en relation les projets avec les compétences, pas juste les langages, 
-Je veux dire de rajouter un truc en mode "gestion de projet", "administration réseau", 
-"développement front" et des trucs spécifiques à ton parcours et tes projets à chaque projet 
-Mettre ta tete-->

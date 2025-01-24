@@ -90,8 +90,9 @@ header .header-text ul li {
 }
 .presentation{
   text-align:justify;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 10px;
 }
 /* Links Styles */
 a {

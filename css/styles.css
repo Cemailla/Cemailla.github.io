@@ -34,6 +34,19 @@ body {
   margin:none;
   box-shadow:none!important;
 }
+.icon-skills{
+  max-width: 42px;
+  max-height:50px ;
+  border-radius: 20%;
+
+}
+.div-skill{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 /* Header Section */
 header {
   background-color: rgba(109, 104, 117, 0.7);
@@ -74,6 +87,11 @@ header .header-text ul {
 header .header-text ul li {
   margin: 5px 0;
   list-style: none;
+}
+.presentation{
+  text-align:justify;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 /* Links Styles */
 a {

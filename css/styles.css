@@ -119,10 +119,6 @@ header .header-text ul li {
     overflow-x: hidden;
     margin: none;
   }
-  .scroll-down {
-    color: transparent;
-    z-index: 0;
-  }
   .skills-list {
     padding: 10px;
     max-width:70%;
@@ -143,9 +139,9 @@ header .header-text ul li {
     max-height: 50px;
   }
   .form-container {
-    min-width: 80%; /* Ajuster la largeur pour les petits écrans */
-    margin-top: 10px; /* Réduire la marge supérieure pour les petits écrans */
-    margin-bottom: 10px; /* Réduire la marge inférieure pour les petits écrans */
+    min-width: 80%; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
   }
   .form-container h2{
     font-size: 20px;

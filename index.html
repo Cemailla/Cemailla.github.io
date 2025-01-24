@@ -59,6 +59,16 @@
                 scrollDown.style.display = 'block';
             }
         });
+        const mediaQuery = window.matchMedia('(max-width: 600px)');
+        function handleTabletChange(e) {
+            if (e.matches) {
+                scrollDown.style.display = 'none';
+            } else {
+                scrollDown.style.display = 'block';
+            }
+        }
+        mediaQuery.addListener(handleTabletChange);
+        handleTabletChange(mediaQuery);
     </script>
 </body>
 </html>

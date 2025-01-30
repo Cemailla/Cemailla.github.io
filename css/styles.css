@@ -146,6 +146,14 @@ header .header-text ul li {
   .form-container h2{
     font-size: 20px;
   }
+  .pn {
+    flex-direction: column; /* Aligne les éléments en colonne sur les petits écrans */
+  }
+
+  .pn p {
+    margin: 10px 0; /* Ajoutez une marge verticale pour espacer les éléments */
+    text-align: justify;
+  }
 }
 .index{
   overflow-x: hidden;
@@ -226,10 +234,10 @@ a:hover {
   padding: 0;
 }
 .skills-list {
-  width: 100%;
+  width: 80%;
   background-color: rgba(210, 161, 157, 0.7);
   border-radius: 10px;
-
+  padding: 20px;
 }
 .skills-p {
   padding-left: 10px;
@@ -304,7 +312,7 @@ footer {
   width:100%;
   flex-direction: column;
   display: flex;
-  padding: 20px;
+  padding: 20px; 
 }
 
 .fa {
@@ -414,4 +422,16 @@ footer {
   60% {
     transform: translateY(-5px);
   }
+}
+.pn {
+  display:flex; /* Utilisez Flexbox pour aligner les éléments en ligne */
+  justify-content: space-around; /* Espace égal entre les éléments */
+  align-items: center; /* Centre les éléments verticalement */
+
+}
+
+.pn p {
+  margin: 0 10px; /* Ajoutez une marge horizontale pour espacer les éléments */
+  text-align: center; /* Centre le texte */
+  flex: 1;
 }

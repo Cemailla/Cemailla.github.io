@@ -28,12 +28,19 @@ body {
 }
 
 .svg-icon {
+  width: 50px;
+  border: none!important;
+  margin:none;
+  box-shadow:none!important;
+}
+.svg-ada {
   max-width: 100px;
   max-height: 100px;
   border: none!important;
   margin:none;
   box-shadow:none!important;
 }
+
 .icon-skills{
   max-width: 42px;
   max-height:50px ;
@@ -96,8 +103,8 @@ header .header-text ul li {
   padding-bottom: 10px;
 }
 .profile-photo{
-  width: 18% ; 
-  height:18%;
+  width: 18%; 
+  height: 18%;
 }
 @media (max-width: 600px) {
   .presentation {
@@ -109,8 +116,8 @@ header .header-text ul li {
     font-size: 25px;
   }
   .profile-photo{
-    width: 25% ; 
-    height:25%;
+    width: 35% ; 
+    height:35%;
   }
   .element {
     display: flex;

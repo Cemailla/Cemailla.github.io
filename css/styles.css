@@ -439,11 +439,13 @@ footer {
 }
 
 .pn p {
-  margin: 0 10px; /* Ajoutez une marge horizontale pour espacer les éléments */
-  text-align: center; /* Centre le texte */
+  height: 150px;
+  width: 200px;
+ /* Ajoutez une marge horizontale pour espacer les éléments */
   flex: 1 1 calc(33.333% - 20px); /* 3 éléments par ligne avec marge */
   box-sizing: border-box; /* Inclut la marge dans la taille totale */
-  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px; ;
   background-color:#c47f78b3; /* Ajoutez une bordure autour des éléments */
   border-radius: 5px; /* Ajoutez des coins arrondis à la bordure */
 }

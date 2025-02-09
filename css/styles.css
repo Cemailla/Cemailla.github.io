@@ -159,7 +159,8 @@ header .header-text ul li {
 
   .pn p {
     margin: 10px 0; /* Ajoutez une marge verticale pour espacer les éléments */
-    text-align: justify;
+    text-align: left!important;
+    background-color: transparent!important;
   }
 }
 .index{
@@ -242,7 +243,7 @@ a:hover {
 }
 .skills-list {
   width: 80%;
-  background-color: rgba(210, 161, 157, 0.7);
+  background-color: #d2a19db3;
   border-radius: 10px;
   padding: 20px;
 }
@@ -431,14 +432,18 @@ footer {
   }
 }
 .pn {
-  display:flex; /* Utilisez Flexbox pour aligner les éléments en ligne */
+  display: flex; /* Utilisez Flexbox pour aligner les éléments en ligne */
+  flex-wrap: wrap; /* Permet le retour à la ligne */
   justify-content: space-around; /* Espace égal entre les éléments */
   align-items: center; /* Centre les éléments verticalement */
-
 }
 
 .pn p {
   margin: 0 10px; /* Ajoutez une marge horizontale pour espacer les éléments */
   text-align: center; /* Centre le texte */
-  flex: 1;
+  flex: 1 1 calc(33.333% - 20px); /* 3 éléments par ligne avec marge */
+  box-sizing: border-box; /* Inclut la marge dans la taille totale */
+  margin-top: 10px;
+  background-color:#c47f78b3; /* Ajoutez une bordure autour des éléments */
+  border-radius: 5px; /* Ajoutez des coins arrondis à la bordure */
 }

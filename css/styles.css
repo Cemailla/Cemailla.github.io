@@ -410,15 +410,6 @@ footer {
   background-color: #413e52;
 }
 
-.scroll-down {
-  position: fixed; /* Position fixe pour rester visible */
-  bottom: 50px; /* Positionné en bas de la fenêtre */
-  font-size: 35px;
-  text-decoration: none;
-  z-index: 1000; /* Assurez-vous qu'il se superpose aux autres éléments */
-  animation: bounce 2s infinite;
-  color:#f5acb8 ;
-}
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

@@ -28,10 +28,7 @@
         </div>
     </header>
 
-    <a href="#main-content" id="scroll-down" class="scroll-down">
-        <i class="fa-solid fa-chevron-down"></i>
-    </a>
-
+ 
     <main id="main-content">
         <div class="element">
             <a class="btn-projets" href="projets.html">VOIR MES PROJETS</a>  
@@ -43,32 +40,6 @@
         <a href="https://www.linkedin.com/in/célia-tognini-8ab182264/"><img src="assets/img/linkedin.png" alt="linkedin link" class="svg-icon"></a>
         <a href="contact.html">Contact</a>
     </footer>
-    <script>
-        const scrollDown = document.getElementById('scroll-down');
-
-        scrollDown.addEventListener('click', function() {
-            this.style.display = 'none';
-        });
-
-        window.addEventListener('scroll', function() {
-            if (window.scrollY === 0) {
-                scrollDown.style.display = 'block';
-            } else if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                scrollDown.style.display = 'none';
-            } else {
-                scrollDown.style.display = 'block';
-            }
-        });
-        const mediaQuery = window.matchMedia('(max-width: 600px)');
-        function handleTabletChange(e) {
-            if (e.matches) {
-                scrollDown.style.display = 'none';
-            } else {
-                scrollDown.style.display = 'block';
-            }
-        }
-        mediaQuery.addListener(handleTabletChange);
-        handleTabletChange(mediaQuery);
-    </script>
+    
 </body>
 </html>

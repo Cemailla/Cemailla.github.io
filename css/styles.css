@@ -188,6 +188,8 @@ a:hover {
 }
 
 .project-item {
+  width: 700px;
+  height:520px;
   background-color: rgba(229, 152, 155, 0.7);
   margin: 20px;
   border-radius: 10px;
@@ -195,7 +197,11 @@ a:hover {
   text-align: center;
   padding: 10px;
   align-items: center;
-  max-width: 350px; /* Limite la largeur des éléments */
+  
+}
+.projets-skills{
+  text-decoration: none!important;
+
 }
 
 .project-item img {
